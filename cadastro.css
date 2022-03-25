@@ -1,0 +1,281 @@
+body{
+    background: #ffffff;
+}
+
+@font-face {
+    font-family: Fredoka;
+    src: url(Fredoka.ttf);
+ }
+*, a, h1{
+    font-family: Fredoka;
+}
+
+header {
+    background-color:#a3eca7;
+    border-bottom: #eaeaea solid 1px;
+    margin-bottom: 50px;
+}
+.logoposicao{
+    width: 1200px;
+    position: relative;
+    margin: 0 auto;
+}
+.imagem{
+    width: 150px;
+}
+.textoposicao{
+    display: inline;
+    font-size: 77px;
+    position: relative;
+    text-align: center;  
+    padding-right: 800px;
+    float: right;
+}
+
+nav{
+    position: absolute;
+    top: 16px;
+    right: 0;
+}
+.botao-header {
+    padding: 1em 2em;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+   }
+   
+   .botao-header:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+   }
+   
+   .botao-header:active {
+    transform: translateY(-1px);
+   }
+nav li {
+    display: inline;
+    margin-left: 15px;
+}
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+form{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+.padrao{
+     display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+.TituloPrincipalCentralizado{
+    font-size: 40px;
+    font-weight: bold;
+    position: relative;
+    text-align: left;
+    margin: 30px 0 30px 10px;
+}
+.nomes-cadastro{
+    font-weight: bold;
+}
+.enviar {
+    font-size: 20px;
+    background: rgb(141, 223, 120);
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+   }
+   
+   .enviar span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+   }
+   
+   .enviar svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+   }
+   
+   .enviar:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+   }
+   
+   .enviar:hover svg {
+    transform: translateX(4em) rotate(45deg) scale(1.1);
+   }
+   
+   .enviar:hover span {
+    transform: translateX(10em);
+   }
+   
+   .enviar:active {
+    transform: scale(0.95);
+   }
+   
+   @keyframes fly-1 {
+    from {
+     transform: translateY(0.1em);
+    }
+   
+    to {
+     transform: translateY(-0.1em);
+    }
+   }
+.botao-voltar{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    margin: 0px 0 20px 0 ;
+   }
+   
+   button.learn-more {
+    width: 12rem;
+    height: auto;
+   }
+   
+   button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+   }
+   
+   button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+   }
+   
+   button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+   }
+   
+   button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.31rem;
+    right: 0.400rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(225deg);
+   }
+   
+   button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+   }
+   
+   button:hover .circle {
+    width: 100%;
+   }
+   
+   button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+   }
+   
+   button:hover .button-text {
+    color: #fff;
+   }
+#imagem-voltar{
+    width: 50px;
+    left: 10px;
+    transition: 1s all;
+    margin: 20px 0;
+}
+#imagem-voltar:hover{
+    transform: scale(1.2);
+}
+#imagem-voltar:active{
+
+}
+.cadastro{
+    margin-left: 400px;
+    margin-bottom: 100px;
+    font-size: 80px;
+}
+footer{
+    text-align: center;
+    background: url(bg.jpg);
+    padding: 100px 0;
+}
+.copyright {
+    color: #ffffff;
+    font-size: 13px;
+    margin-top: 20px;
+}
+.erro{
+    color: red;
+    border-color: red;
+}
+.icon{
+    transition: 1s all;
+    cursor: pointer;
+    margin: 0 0 5px 10px;
+}
+.icon:hover{
+    transform: scale(1.6);
+    fill: #000;
+}
