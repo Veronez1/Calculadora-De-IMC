@@ -1,6 +1,7 @@
 # Calculadora De IMC e Validador de CPF de cadastro com Javascript
 
 ![Davi](https://user-images.githubusercontent.com/87334467/166715667-608bfdbd-6052-4f93-b963-17380d90adb5.gif)
+<br>
 Calculadora de IMC | UX UI Feita com HTML CSS Javascript
 <li>Ter menu;</li>
 <li>Ter um título;</li>
